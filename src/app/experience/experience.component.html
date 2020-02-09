@@ -1,0 +1,25 @@
+<div style="padding-bottom: 20px;">
+    <div class="card" 
+        style="padding:20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        <div>
+            <img src="../../assets/images/work.png" width="50px"  height="50px"> 
+            <span class="sectionTitle"> 
+                Work Experience 
+            </span>
+        </div>
+        <div
+            *ngFor = "let experience of experiences" 
+            style="padding-left: 80px;">
+            <strong> {{ experience.Title}}</strong>
+            <div>  
+                <small>
+                {{ experience.Company }}  <span style="float: right;">{{ experience.Date }} - {{ experience.Address}}</span> <br/>
+                </small>  
+                {{ experience.Description }}
+            </div>
+            <div class="mainSeparator">
+                <hr class="blackLine"/>
+            </div>
+        </div>
+    </div>
+</div>

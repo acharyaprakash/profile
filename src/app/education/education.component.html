@@ -1,0 +1,22 @@
+<div style="padding-bottom: 20px;">
+    <div class="card" 
+        style="font-size: 14px; padding:20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        <div>
+            <img src="../../assets/images/education.png" width="50px"  height="50px">
+            <span class="sectionTitle"> 
+                Education 
+            </span>
+        </div>
+        <div
+            *ngFor = "let education of educations" 
+            style="padding-left: 80px;">
+            <strong> {{ education.Title}}</strong>
+            <div>
+               {{ education.University }} - {{ education.Date }} - {{ education.GPA}}
+            </div>
+            <div class="mainSeparator">
+                <hr class="blackLine"/>
+            </div>
+        </div>
+    </div>
+</div>
