@@ -30,7 +30,7 @@
                     <img src="././assets/images/email.png" width="24" height="24" /> 
                 </div>
                 <div class="card-text navbarContent">
-                    acharya.prakash@outlook.com
+                    <a class="email" href="mailto:acharya.prakash@outlook.com?Subject=Contact">acharya.prakash@outlook.com</a> 
                 </div>
                 <div class="separator">
                     <hr/>
@@ -52,7 +52,13 @@
                     <img src="././assets/images/top-skill.png" width="24" height="24" /> 
                 </div>
                 <div class="card-text navbarContent">
-                    Professional Skills
+                    <span>Professional Skills</span>
+                    <ul 
+                        *ngFor = "let skill of skills"
+                        style="list-style-type: none; padding-left: 10px; font-size: 14px; padding-top: 5px;">
+                        <li> {{ skill.Skill }}</li>
+                        
+                    </ul>
                 </div>
                 <div class="separator">
                     <hr/>

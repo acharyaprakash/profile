@@ -45,7 +45,7 @@ body{
     width: 85%; 
     /* text-align: right;  */
     padding-left: 15px;
-    font-size: small;
+    font-size: 14px;
     padding-top: 7px;
 }
 
@@ -55,4 +55,19 @@ body{
     font-weight: bold; 
     font-size: 28px; 
     color: #5c5959;
+}
+
+ul li {
+    padding:3px;
+}
+
+.email{
+    color: black;
+    font-size: 14px;
+}
+
+.email:hover{
+    text-decoration: none;
+    color:gray;
+    font-size: 14px;
 }

@@ -7,26 +7,12 @@
                 Projects 
             </span>
         </div>
-        <div style="padding-left: 80px; font-size: 14px;">
-            <strong>Auto Insurance Fraud Detection</strong>
+        <div
+            *ngFor = "let project of projects" 
+            style="padding-left: 80px; font-size: 14px;">
+            <strong>{{ project.title }}</strong>
             <div>
-                Detect insurance fraud from the data. The data was cleaned using pandas. The incoming data was accessed using spark streaming and passed to decision tree model to detect fraudulent claims. The data was then stored in MongoDB.    
-            </div>
-            <strong>Twitter Data Analysis</strong>  
-            <div>
-                Analyzing Twitter feed using spark streaming to find trends and hashtags.
-            </div>
-            <strong>Data Visualization: Traffic Incident in City of Austin</strong>
-            <div>
-                Used the traffic incident data from City of Austin to create a data visualization for various traffic incidents using Tableau. The data was cleaned in python and then fed to Tableau.
-            </div>
-            <strong>Data visualization: Bankruptcy Cases filed and assets trends <br/> </strong>
-            <div>
-                Created visualization to see from which state a greater number of cases are being filed. Finding the trends in assets which helped in developing a Research Website tool. Based on the data visualization the tools for Zillow, Nada were developed using selenium.
-            </div>
-            <strong>Virtual Tour of University of Houston - Clear Lake <br/> </strong>
-            <div>
-                This project depicts virtual environment of the University of Houston-Clear Lake using Unity 3D.
+                {{ project.description }} 
             </div>
             <div class="mainSeparator">
                 <hr class="blackLine"/>

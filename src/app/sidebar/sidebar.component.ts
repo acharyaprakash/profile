@@ -7,7 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
-  constructor() { }
+  skills=[];
+  constructor() { 
+    this.skills=[
+      { Skill: "ASP.NET", Rating: 9 },
+      { Skill: "MS SQL", Rating: 9 },
+      { Skill: "Python", Rating: 9 },
+      { Skill: "Angular", Rating: 9 }
+    ];
+  }
 
   ngOnInit() {
   }

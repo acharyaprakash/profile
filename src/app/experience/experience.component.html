@@ -11,11 +11,20 @@
             *ngFor = "let experience of experiences" 
             style="padding-left: 80px;">
             <strong> {{ experience.Title}}</strong>
-            <div>  
-                <small>
-                {{ experience.Company }}  <span style="float: right;">{{ experience.Date }} - {{ experience.Address}}</span> <br/>
-                </small>  
-                {{ experience.Description }}
+            <div style="font-size: 14px;">  
+                {{ experience.Company }}  
+                <span style="float: right; font-size: 14px;">
+                    {{ experience.Date }} - {{ experience.Address}}
+                </span> 
+                <br/><br/>
+                <div
+                    style="font-size: 14px;" 
+                    *ngFor = "let responsibility of experience.Responsibilities">
+                    <img src="././assets/images/arrow.png" width="20px">
+                    <span style="vertical-align: bottom;">
+                        {{ responsibility.Title }}
+                    </span>
+                </div>
             </div>
             <div class="mainSeparator">
                 <hr class="blackLine"/>
