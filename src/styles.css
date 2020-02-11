@@ -7,6 +7,8 @@ body{
     padding-right: 30px;
     padding-top: 20px;
     padding-bottom: 20px;
+
+    background-color: black;
 }
 
 .sidebar{
@@ -19,17 +21,16 @@ body{
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
-    background-color:#fff;
+    /* background-color:#fff; */
     background-clip: border-box;
     /* border: 1px solid rgba(0, 0, 0, 0.125); */
     border-radius: 0.25rem;
 }
 
 .separator{
-    float: right !important;
     width: 300px;
     padding-left: 40px;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 .mainSeparator{
@@ -41,12 +42,8 @@ body{
     background-color: black;
 }
 
-.navbarContent{
-    width: 85%; 
-    /* text-align: right;  */
-    padding-left: 15px;
+.navbarContent{ 
     font-size: 14px;
-    padding-top: 7px;
 }
 
 .sectionTitle{
@@ -54,7 +51,9 @@ body{
     padding-top:10px; 
     font-weight: bold; 
     font-size: 28px; 
-    color: #5c5959;
+
+    color: #820909;
+    text-shadow:2px 2px 2px #000000;
 }
 
 ul li {
@@ -68,6 +67,25 @@ ul li {
 
 .email:hover{
     text-decoration: none;
-    color:gray;
+    color:white;
     font-size: 14px;
+}
+
+.cardShadow{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 0px 0px 5px 5px;
+
+    background-color: #c6c6c6;
+}
+
+.sectionShadow{
+    font-size: 14px; 
+    padding:20px; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    background-color: #c6c6c6;
+}
+
+.section{
+    padding-bottom: 20px;
 }

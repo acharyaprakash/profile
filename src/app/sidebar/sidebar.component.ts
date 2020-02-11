@@ -10,10 +10,11 @@ export class SidebarComponent implements OnInit {
   skills=[];
   constructor() { 
     this.skills=[
-      { Skill: "ASP.NET", Rating: 9 },
-      { Skill: "MS SQL", Rating: 9 },
-      { Skill: "Python", Rating: 9 },
-      { Skill: "Angular", Rating: 9 }
+      { Skill: "ASP.NET (Web Forms, MVC)", Rating: "95%" },
+      { Skill: "JavaScript", Rating: "90%" },
+      { Skill: "MS SQL", Rating: "90%" },
+      { Skill: "Python", Rating: "70%" },
+      { Skill: "Angular", Rating: "60%" }
     ];
   }
 
